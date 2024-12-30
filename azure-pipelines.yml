@@ -15,7 +15,7 @@ steps:
 
 - script: |
     npm install
-    npm run sample test
+    npm run sample-test
   env:
     BROWSERSTACK_USERNAME: $(BROWSERSTACK_USERNAME)
     BROWSERSTACK_ACCESS_KEY: ${BROWSERSTACK_ACCESS_KEY}
