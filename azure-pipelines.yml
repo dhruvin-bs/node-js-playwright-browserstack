@@ -15,6 +15,7 @@ steps:
 
 - script: |
     npm install
+    printenv
     npm run sample-test
   env:
     BROWSERSTACK_USERNAME: $(BROWSERSTACK_USERNAME)
