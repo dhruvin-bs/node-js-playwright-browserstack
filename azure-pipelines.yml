@@ -14,6 +14,11 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    npm install
+    npm run sample test
+  env:
+    BROWSERSTACK_USERNAME: $(BROWSERSTACK_USERNAME)
+    BROWSERSTACK_ACCESS_KEY: ${BROWSERSTACK_ACCESS_KEY}
+    BROWSERSTACK_PROJECT_NAME: $(BROWSERSTACK_PROJECT_NAME)
+    BROWSERSTACK_BUILD_NAME: ${BROWSERSTACK_BUILD_NAME}
   displayName: 'Run a multi-line script'
