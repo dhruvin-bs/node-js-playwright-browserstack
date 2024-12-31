@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "latest",
+    "@playwright/test": "1.47",
     "browserstack-node-sdk": "latest"
   }
 }
