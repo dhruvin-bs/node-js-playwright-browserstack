@@ -1,7 +1,10 @@
 const { expect, test } = require('@playwright/test');
 
-test.describe('RGP HealthCheck - regOps', { tag: ['@app', '@healthcheck', '@performance', '@visual'] }, async () => {
-    test('BStackDemo test add to cart', async ({ page }) => {
+test.describe('RGP HealthCheck - regOps', () => {
+  // Add tags for the suite
+  test.use({ tags: ['@app', '@healthcheck', '@performance', '@visual'] });
+
+  test('BStackDemo test add to cart', async ({ page }) => {
       // visit the site
       await page.goto('https://bstackdemo.com/');
     
