@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('RGP HealthCheck - regOps', /*{ tag: ['@app', '@healthcheck', '@performance', '@visual'] }*/ async () => {
+test.describe('RGP HealthCheck - regOps', { tag: ['@app', '@healthcheck', '@performance', '@visual'] }, async () => {
   test('Navigate to regOps list page and verify', async ({ page }) => {
       // visit the site
       await page.goto('https://bstackdemo.com/');
